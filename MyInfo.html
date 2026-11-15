@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4ff;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(120deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #e0e7ff;
+        }
+
+        /* Navigation */
+        nav {
+            background: #172554;
+            text-align: center;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        /* Sections */
+        .section {
+            background: white;
+            padding: 28px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #6366f1;
+            box-shadow: 0 4px 12px rgba(40, 50, 100, 0.08);
+            transition: 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 18px rgba(40, 50, 100, 0.14);
+        }
+
+        h2 {
+            color: #4f46e5;
+            margin-bottom: 15px;
+        }
+
+        /* Education */
+        #education {
+            border-left-color: #06b6d4;
+        }
+
+        #education h2 {
+            color: #0891b2;
+        }
+
+        /* Skills */
+        #skills {
+            border-left-color: #10b981;
+        }
+
+        #skills h2 {
+            color: #059669;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            padding: 4px 0;
+        }
+
+        /* Career */
+        #goal {
+            border-left-color: #f59e0b;
+        }
+
+        #goal h2 {
+            color: #d97706;
+        }
+
+        /* Social Links */
+        #social {
+            border-left-color: #ec4899;
+        }
+
+        #social h2 {
+            color: #db2777;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            padding: 10px 22px;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f97316, #db2777, #9333ea);
+        }
+
+        .linkedin {
+            background: #0a66c2;
+        }
+
+        .github {
+            background: #24292e;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.06);
+            opacity: 0.85;
+        }
+
+        /* Footer */
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        footer span {
+            color: #93c5fd;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+                font-size: 14px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Saurav Kumar</h1>
+        <p>B.Tech CSE Student | Aspiring Software Developer</p>
+        <p>Lovely Professional University (LPU)</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#goal">Goals</a>
+        <a href="#social">Connect</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- About -->
+        <div class="section" id="about">
+            <h2>👋 About Me</h2>
+
+            <p>
+                Hello!<br> My name is Saurav Kumar.
+                I am currently studying B.Tech in Computer
+                Science and Engineering at Lovely Professional
+                University (LPU).
+            </p>
+
+            <p>
+                I am interested in technology, programming,
+                web development and learning new skills.
+                I enjoy exploring new ideas and working on projects.
+            </p>
+        </div>
+
+        <!-- Education -->
+        <div class="section" id="education">
+            <h2>🎓 Education</h2>
+
+            <p><b>University:</b> Lovely Professional University</p>
+            <p><b>Degree:</b> B.Tech in Computer Science and Engineering</p>
+            <p><b>Year:</b> 1st Year</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="section" id="skills">
+            <h2>💻 Technical Skills</h2>
+
+            <ul>
+                <li>HTML and HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <!-- Career Goal -->
+        <div class="section" id="goal">
+            <h2>🚀 My Career Goal</h2>
+
+            <p>
+                My goal is to become a skilled software developer,
+                improve my technical knowledge and build useful
+                solutions for real-world problems.<br>
+                I also want to Join companies like Microsoft, Google or any product-based IT company.
+            </p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="section" id="social">
+            <h2>🌐 Connect With Me</h2>
+
+            <div class="social-links">
+
+                <a class="instagram"
+                   href="https://www.instagram.com/ssaurav9_/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram
+                </a>
+
+                <a class="linkedin"
+                   href="https://www.linkedin.com/in/ssaurav9"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a class="github"
+                   href="https://github.com/ssaurav9"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 <span>Saurav Kumar</span> | Personal Portfolio</p>
+        <p>Designed with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
